@@ -1,0 +1,12 @@
+const fs = require('fs');
+// leitura de diretorios
+fs.readdir('../',(err,data) =>{
+
+    if(err)throw err;
+
+    data.forEach((files)=>{
+      
+        console.log(__dirname + "\\" +   files);
+
+    })
+})
